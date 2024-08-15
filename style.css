@@ -94,7 +94,7 @@ img{
     border-radius: 12px;
     background: var(--primary-color);
     padding: 13px 20px;
-    color: #fff;
+    color: var(--white-color);
     font-weight: 500;
     text-decoration: none; /* Ensure no underline by default */
     transition:  0.5s;/* Transition adjustment */
