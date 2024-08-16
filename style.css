@@ -25,16 +25,14 @@
 body {
     font-family: "Poppins", sans-serif;
     background: var(--white-color);
-    line-height: var(--line-height);
+   
 }
 a{
     text-decoration: var(--text-decoration);
     color: var(--text-color);
 }
 
-a:hover {
-    text-decoration: underline;
-}
+
 ul {
 list-style: var(--ul-li);
 }
@@ -74,9 +72,31 @@ img{
        .navbar ul li :last-child a {
         margin-left: 10px;
        }
-    
-    
     /* navbar */
+    /* hero */
+    .hero {
+        margin-bottom: 50px;
+    
+    }
+    .hero .container {
+    background: url(./assets/hero-bg.png) no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+    }
+.container .hero-content {
+    width: 70%;
+}
+
+.hero .hero-title{
+    line-height: 2.7rem;
+}
+.hero .hero-text{
+    width: 70%;
+    margin-bottom:20px ;
+}
+ 
+    /* hero */
 /* utility classes */
 .container{
     max-width: 1100px;
@@ -89,23 +109,78 @@ img{
     padding: 0 15px;
 }
 /* buttons */
-.btn{
+.btn-primary {
     display: inline-block;
-    border-radius: 12px;
+    border-radius: 8px; /* Smaller border radius for a less rounded button */
     background: var(--primary-color);
-    padding: 13px 20px;
-    color: var(--white-color);
-    font-weight: 500;
+    padding: 10px 15px; /* Reduced padding for a smaller button */
+    color: #fff;
+    font-weight: 400; /* Adjusted font weight for a less bold appearance */
+    font-size: 14px; /* Adjust font size for better scaling */
     text-decoration: none; /* Ensure no underline by default */
-    transition:  0.5s;/* Transition adjustment */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
     cursor: pointer;
-   
 }
 
-.btn:hover{
+.btn-primary:hover{
     background:var(--secondary-color);
+   }
+.btn-secondary {
+    display: inline-block;
+    border-radius: 8px; /* Smaller border radius for a less rounded button */
+    background: var(--accent1-color);
+    padding: 10px 15px; /* Reduced padding for a smaller button */
+    color: #fff;
+    font-weight: 400; /* Adjusted font weight for a less bold appearance */
+    font-size: 14px; /* Adjust font size for better scaling */
+    text-decoration: none; /* Ensure no underline by default */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+}
+.btn-secondary:hover{
+    background:var(--accent-color);
    }
 
 /* buttons */
+/* text-classes */
+.text-xxl {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    margin: 40px 0px 20px;
+}
+
+.text-xl{
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin: 40px 0 20px;
+    line-height: 1.4rem;
+    margin: 40px 0px 20px;
+}
+.text-lg{
+ font-size: 1.8rem;
+ font-weight: normal;
+ line-height: 1.4rem;
+ margin: 30px 0px 20px;
+}
+.text-md{
+ font-size: 1.2rem;
+ font-weight: normal;
+ line-height: 1.4rem;
+ margin: 20px 0px 20px;
+}
+.text-sm{
+ font-size: 0.9rem;
+ font-weight: normal;
+ line-height: 1.1rem;
+ margin: 20px 0px 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+}
+/* text-classes */
 
 /* utility classes */
